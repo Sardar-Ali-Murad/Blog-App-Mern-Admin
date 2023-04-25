@@ -1,0 +1,33 @@
+.writersGrids{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(22rem,1fr));
+    gap: 10px;
+    margin-left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+}
+
+.writerBox{
+    background: #285768;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid  #a0ecd0 ;
+    box-shadow: 2px 2px 2px black;
+}
+
+.accept{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;    
+  background-color: rgb(177, 223, 177);
+  margin-top: 20px;
+  cursor: pointer;
+}
+/* 
+.btns{
+    margin-left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+} */

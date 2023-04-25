@@ -1,0 +1,80 @@
+.sidebar {
+  padding: 30px 16px;
+  height: 100%;
+}
+.sidebar * {
+  box-sizing: border-box !important;
+  text-decoration: none;
+}
+/* .sidebar > a {
+  text-align: center;
+  display: block;
+  margin-bottom: 30px !important;
+} */
+.sidebar > a img {
+  width: 60px;
+  height: 60px;
+}
+.sidebar .active {
+  background: linear-gradient(180deg, #2e6073 0%, #214b5a 100%) !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.12) !important;
+}
+.sidebar .active:active {
+  background: black !important;
+}
+.sidebar .active .MuiTypography-root {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+.sidebar .active img {
+  filter: saturate(0%) brightness(350%) !important;
+}
+.sidebar .MuiListItemIcon-root {
+  min-width: 36px !important;
+}
+
+.sidebar {
+  display: flex;
+  gap: 30px;
+}
+
+.sidebarMain {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  background: #a0ecd0;
+  box-shadow: 3px 0px 6px rgba(0, 0, 0, 0.16);
+}
+
+.itemBox {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.itemBox p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+}
+
+.active p {
+  color: #f1f1ff;
+  font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 700px) {
+  .sideBarLogo {
+    display: none;
+  }
+  .sidebar {
+    gap: 10px;
+  }
+  .sidebarMain {
+    /* padding: 0px 3px; */
+  }
+}
