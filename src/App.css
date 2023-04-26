@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@500&family=Poppins:wght@200&family=Roboto:wght@400;700&family=Source+Serif+Pro&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200&family=Nunito:wght@300&family=Open+Sans:wght@500&family=Poppins:wght@200&family=Roboto:wght@400;700&family=Source+Serif+Pro&display=swap");
 
 body,
 html {
@@ -37,6 +37,4 @@ html {
   overflow-y: auto !important;
   overflow-x: visible !important;
 }
-.dashboard .TabsContent::-webkit-scrollbar {
-  /* display: none; */
-}
+

@@ -6,11 +6,7 @@
   box-sizing: border-box !important;
   text-decoration: none;
 }
-/* .sidebar > a {
-  text-align: center;
-  display: block;
-  margin-bottom: 30px !important;
-} */
+
 .sidebar > a img {
   width: 60px;
   height: 60px;
@@ -73,8 +69,5 @@
   }
   .sidebar {
     gap: 10px;
-  }
-  .sidebarMain {
-    /* padding: 0px 3px; */
   }
 }

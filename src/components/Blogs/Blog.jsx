@@ -19,12 +19,12 @@ const BlogContent = ({ blog }) => {
           Authorization: `Bearer ${token}`,
         },
       });
-      if(action==="approveBlog"){
+      if (action === "approveBlog") {
         toast.success("Blog Approved Successfully", {
           position: toast.POSITION.TOP_RIGHT,
         });
       }
-      if(action==="rejectBlog"){
+      if (action === "rejectBlog") {
         toast.success("Blog Rejected Successfully", {
           position: toast.POSITION.TOP_RIGHT,
         });
@@ -38,7 +38,7 @@ const BlogContent = ({ blog }) => {
 
   return (
     <div className="blogContentMain">
-      <ToastContainer/>
+      <ToastContainer />
       <div className="blogBtns">
         <h1 className="blogContentHeading" style={{ color: "#FAF9F6" }}>
           {blog?.title}

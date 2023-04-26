@@ -17,7 +17,7 @@
   font-weight: 500;
   font-size: 24px;
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .trendingContainer {
@@ -30,7 +30,7 @@
   color: #222222;
   font-weight: 500;
   font-size: 17px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* font-family: "Noto Sans", sans-serif; */
 }
 
@@ -67,8 +67,6 @@
   font-weight: 400;
 }
 
-
-
 .trendingGrid {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); */
@@ -76,86 +74,80 @@
   gap: 50px;
 }
 
-
-.trendingContainer .mainImage{
- height: 200px;
- width: 100%;
- border-radius: 10px;
+.trendingContainer .mainImage {
+  height: 200px;
+  width: 100%;
+  border-radius: 10px;
 }
 
-@media screen and (max-width:1000px) {
-  .trendingGrid{
+@media screen and (max-width: 1000px) {
+  .trendingGrid {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media screen and (max-width:700px) {
-  .trendingGrid{
+@media screen and (max-width: 700px) {
+  .trendingGrid {
     grid-template-columns: 1fr;
   }
 }
 
-@media screen and (max-width:700px) {
-  .trendingText{
+@media screen and (max-width: 700px) {
+  .trendingText {
     width: 100%;
   }
 }
 
-
-
-.singleBlogMainDiv{
-    width: 80%;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    padding-top: 20px;
+.singleBlogMainDiv {
+  width: 80%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding-top: 20px;
 }
 
-.blogsWriterLeftIntroMain{
-    display: flex;
-    padding-bottom: 20px;
+.blogsWriterLeftIntroMain {
+  display: flex;
+  padding-bottom: 20px;
 }
 
-.blogWriterLeftIntroFlex{
-    display: flex;
+.blogWriterLeftIntroFlex {
+  display: flex;
 }
 
-.singleBlogFlex{
-    display: flex;
-    align-items: center;
-    gap: 10px;
+.singleBlogFlex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-@media screen and (max-width:700px) {
-    .blogWriterLeftIntroFlex{
-        flex-direction: column;
-    }
+@media screen and (max-width: 700px) {
+  .blogWriterLeftIntroFlex {
+    flex-direction: column;
+  }
 }
 
-.blogBtns{
+.blogBtns {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.blogButtonsFlex{
+.blogButtonsFlex {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.acceptBtn{
- height: 30px;
- width: 70px;
- background-color: rgb(103, 103, 206);
- outline: none;
- border: 2px solid rgb(103, 103, 206);
- cursor: pointer;
- color: #f1f1f1;
+.acceptBtn {
+  height: 30px;
+  width: 70px;
+  background-color: rgb(103, 103, 206);
+  outline: none;
+  border: 2px solid rgb(103, 103, 206);
+  cursor: pointer;
+  color: #f1f1f1;
 }
 
-
-
-
-.rejectBtn{
+.rejectBtn {
   height: 30px;
   width: 70px;
   background-color: rgb(216, 119, 119);

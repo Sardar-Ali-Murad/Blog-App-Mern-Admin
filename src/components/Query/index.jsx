@@ -30,7 +30,7 @@ const index = () => {
   }
   return (
     <div className="writersGrids">
-      {contacts?.map((contact,i) => {
+      {contacts?.map((contact, i) => {
         return (
           <div className="writerBox" key={i}>
             <p>{contact?.name}</p>

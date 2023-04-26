@@ -38,7 +38,7 @@ const index = () => {
     <div>
       <div className="writersGrids">
         {writers.map((writer) => {
-          return <Writer writer={writer} start={start}  />;
+          return <Writer writer={writer} start={start} />;
         })}
       </div>
     </div>

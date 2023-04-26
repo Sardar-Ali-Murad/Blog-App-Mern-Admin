@@ -7,25 +7,25 @@ import moment from "moment";
 import axios from "axios";
 import { BACK_END_URL } from "../../utils";
 
-const Trending = ({ blogs,start }) => {
-let token=JSON.parse(localStorage.getItem("token"))
-  const blogAction=async (action,id)=>{
+const Trending = ({ blogs, start }) => {
+  let token = JSON.parse(localStorage.getItem("token"));
+  const blogAction = async (action, id) => {
     try {
-      await axios.get(`${BACK_END_URL}/blog/admin/${action}/${id}`,{
-        headers:{
-          Authorization:`Bearer ${token}`
-        }
-      })
-      start()
+      await axios.get(`${BACK_END_URL}/blog/admin/${action}/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      start();
     } catch (error) {
-       console.log(error?.response?.data?.msg)
+      console.log(error?.response?.data?.msg);
     }
-  }
+  };
   return (
     <div className="trendingMain">
       <div className="trendingText">
         <div className="trendingGrid">
-          {blogs?.map((item,i) => {
+          {blogs?.map((item, i) => {
             return (
               <div className="trendingContainer" key={i}>
                 <Link
@@ -37,11 +37,21 @@ let token=JSON.parse(localStorage.getItem("token"))
                   </div>
                 </Link>
                 <div className="blogBtns">
-                <a className="trendingHead">{item?.title}</a>
-                <div className="blogButtonsFlex">
-                   <button className="acceptBtn" onClick={()=>blogAction("approveBlog",item?._id)}>Accept</button>
-                   <button className="rejectBtn" onClick={()=>blogAction("rejectBlog",item?._id)}>Reject</button>
-                </div>
+                  <a className="trendingHead">{item?.title}</a>
+                  <div className="blogButtonsFlex">
+                    <button
+                      className="acceptBtn"
+                      onClick={() => blogAction("approveBlog", item?._id)}
+                    >
+                      Accept
+                    </button>
+                    <button
+                      className="rejectBtn"
+                      onClick={() => blogAction("rejectBlog", item?._id)}
+                    >
+                      Reject
+                    </button>
+                  </div>
                 </div>
                 <div className="trendingFlex">
                   <img
@@ -64,7 +74,6 @@ let token=JSON.parse(localStorage.getItem("token"))
               </div>
             );
           })}
-       
         </div>
       </div>
     </div>
