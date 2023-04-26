@@ -20,7 +20,7 @@ const Writer = ({writer,start}) => {
         }
       };
   return (
-    <div className='writerBox'>
+    <div className='writerBox' >
       <p>{writer?.email}</p>
       <p>{writer?.name}</p>
       <p>{writer?.city}</p>

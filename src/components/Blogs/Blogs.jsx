@@ -25,9 +25,9 @@ let token=JSON.parse(localStorage.getItem("token"))
     <div className="trendingMain">
       <div className="trendingText">
         <div className="trendingGrid">
-          {blogs?.map((item) => {
+          {blogs?.map((item,i) => {
             return (
-              <div className="trendingContainer">
+              <div className="trendingContainer" key={i}>
                 <Link
                   to={`/home/blog/${item?._id}`}
                   style={{ listStyle: "none", textDecoration: "none" }}
